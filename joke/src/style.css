@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    margin:25px;
+
+}
+
+.joke {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.joke-setup {
+    padding: 20px;
+    border-bottom: black 2px solid;
+    font-weight:bold;
+}
+
+.joke-punchline {
+    padding: 20px;
+}

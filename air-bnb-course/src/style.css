@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#root {
+    flex: 1;
+    display: flex;
+}
+
+.app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    min-height: 70px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+.navbar-logo {
+ margin-left: 40px;
+ max-width: 100px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    width: 60%;
+    max-width: 800px;
+}
+
+.hero-text {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.hero-text-title {
+    font-weight: bold;
+    font-size:32px;
+}
+
+.cards {
+    margin-left: 20px;
+    display: flex;
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-container {
+    display: flex;
+    position: relative;
+}
+
+.card-image {
+    width: 175px;
+    border-radius: 10px;
+}
+
+.card-image-container > span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-top: 15px;
+    width: 175px;
+}
+
+.card-text-top-star {
+    width: 15px;
+}
+
+.card-text-top-place {
+    color:gray;
+}
+
+.card-text-bottom-left {
+    font-weight: bold;
+}

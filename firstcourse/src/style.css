@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+
+#root {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1D26;
+    color:#E1E8F5;
+}
+
+.nav-container-left {
+    display:flex;
+    align-items: center;
+}
+
+.nav-container-left-title {
+    font-weight: bolder;
+    font-size: 35px;
+    margin-left: 10px;
+    color:#62D3F6;
+}
+
+.nav-items {
+    list-style: none;
+    display:flex;
+}
+
+.nav-items > li {
+    font-weight: bold;
+    font-size: large;
+    margin-right: 25px;
+}
+
+.nav-logo {
+    width: 60px;
+}
+.body {
+    color:white;
+    background-color: #24262E;
+    padding: 10px;
+    flex-grow: 1;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.body-list > li {
+    list-style: none;
+    font-size: large;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.body-list > li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-weight: bold; /* If you want it to be bold */
+    font-size:2rem;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    color:#62D3F6;
+}
+
+.footer-text-container {
+    background: lightgray;
+    width: 100%;
+}
+
+.footer-text {
+    margin-left: 10px;
+}
