@@ -45,7 +45,7 @@ export default function GreenText(props) {
                 />
             </div>
             <button onClick={downloadGreentext} className="greentext-download">Download</button>
-            <p className="greentext-mobile-saveimagebelow">Save Image Below!</p>
+            <p className = "greentext-mobile-saveimagebelow">Save Image Below!</p>
         </div>
     );
 };
