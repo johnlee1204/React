@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    flex: 1;
+    display: flex;
+    margin: 1.25rem;
+    background-color: #DFE9F6;
+    border: #336cb7 0.0625rem solid;
+}
+
+.grid {
+    flex: 1;
+    background-color: white;
+    max-width: 25rem;
+}
+
+.docForm {
+    flex: 1;
+    border-left: #336cb7 0.0625rem solid;
+}
+
+.docFormToolbar {
+    display: flex;
+    padding: .5rem;
+    border-bottom: #336cb7 0.0625rem solid;
+    margin-bottom: 1.5rem;
+}
+
+.docFormToolbar > button {
+    margin-left: 3rem;
+}
+
+#docFormCreateButton {
+
+}
+
+#docFormUpdateButton {
+    display: none;
+}
+
+#docFormCancelButton {
+    display: none;
+}
+
+#docFormDeleteButton {
+    display: none;
+}
+
+.docFormState {
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+.docFormInputs {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.docFormInputs > label {
+    margin-bottom: .2rem;
+}
+
+.textField {
+    width: 12rem;
+}
