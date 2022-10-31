@@ -21,7 +21,7 @@ export default function DocForm(props) {
                     value={props.docForm.docFormFields.name.value}
                     disabled={props.docForm.docFormFields.name.disabled}
                     onChange={(event) => props.fieldChange(event)}
-                    style={(props.docForm.docFormState === "edit" || props.docForm.docFormState === "new") && String(props.docForm.docFormFields.name.value) !== String(props.docForm.docFormFields.name.originalValue) ? {background:"#FFFF8F"} : {}}
+                    style={(((props.docForm.docFormState === "edit" || props.docForm.docFormState === "view") && String(props.docForm.docFormFields.name.value) !== String(props.docForm.docFormFields.name.originalValue)) || (props.docForm.docFormState === "new" && String(props.docForm.docFormFields.name.value) !== "")) ? {background:"#FFFF8F"} : {}}
                 ></TextField>
                 <TextField
                     id="age"
@@ -31,7 +31,7 @@ export default function DocForm(props) {
                     value={props.docForm.docFormFields.age.value}
                     disabled={props.docForm.docFormFields.age.disabled}
                     onChange={(event) => props.fieldChange(event)}
-                    style={(props.docForm.docFormState === "edit" || props.docForm.docFormState === "new") && String(props.docForm.docFormFields.age.value) !== String(props.docForm.docFormFields.age.originalValue) ? {background:"#FFFF8F"} : {}}
+                    style={(((props.docForm.docFormState === "edit" || props.docForm.docFormState === "view") && String(props.docForm.docFormFields.age.value) !== String(props.docForm.docFormFields.age.originalValue)) || (props.docForm.docFormState === "new" && String(props.docForm.docFormFields.age.value) !== "")) ? {background:"#FFFF8F"} : {}}
                 ></TextField>
             </div>
         </div>

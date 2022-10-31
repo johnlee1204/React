@@ -176,10 +176,11 @@ export default function App() {
         docForm.docFormFields[event.target.id].value = event.target.value;
         let changeDetected = false;
         for(let i in docForm.docFormFields) {
-            if(String(docForm.docFormFields[i].originalValue) !== String(docForm.docFormFields[i].value)) {
+            if(((docForm.docFormState === "edit" || docForm.docFormState === "view") && String(docForm.docFormFields[i].value) !== String(docForm.docFormFields[i].originalValue)) || (docForm.docFormState === "new" && String(docForm.docFormFields[i].value) !== "")) {
                 changeDetected = true;
                 break;
             }
+
         }
         if(!changeDetected){
             docFormSetState("view");
