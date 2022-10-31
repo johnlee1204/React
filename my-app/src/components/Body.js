@@ -8,6 +8,7 @@ function Body() {
                 <li><a href="/React/DigitalBusinessCard/">Digital Business Card</a></li>
                 <li><a href="/React/AirBnB/">Air BnB</a></li>
                 <li><a href="/React/GreenTextGenerator/">Greentext Generator</a></li>
+                <li><a href="/React/DocForm/">DocForm</a></li>
             </ul>
         </div>
     );
